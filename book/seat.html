@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+</head>
+
+<body>
+
+    <div class="container" id="nqn">
+
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        let arrTwo = [
+            {
+                day: 1,
+                hang: [
+                    {
+                        soHang: 1,
+                        soBan: 8
+                    }
+                ]
+            },
+            {
+                day: 2,
+                hang: [
+                    {
+                        soHang: 1,
+                        soBan: 5
+                    },
+                    {
+                        soHang: 2,
+                        soBan: 4
+                    }
+                ]
+            }, {
+                day: 3,
+                hang: [
+                    {
+                        soHang: 1,
+                        soBan: 5
+                    },
+                    {
+                        soHang: 2,
+                        soBan: 4
+                    }
+                ]
+            }, {
+                day: 4,
+                hang: [
+                    {
+                        soHang: 1,
+                        soBan: 8
+                    },
+                    {
+                        soHang: 2,
+                        soBan: 9
+                    }
+                ]
+            }, {
+                day: 5,
+                hang: [
+                    {
+                        soHang: 1,
+                        soBan: 8
+                    }
+                ]
+            }
+        ]
+        let text = '';
+
+        for (let i = 0; i < arrTwo.length; i++) {
+            text += '<div class="day' + i + '" style="margin-top:25px">'
+            for (let j = 0; j < arrTwo[i].hang.length; j++) {
+                text += '<div class="row">';
+                for (let k = 0; k < arrTwo[i].hang[j].soBan; k++) {
+                    text += '<a class="seat" style="color: white;" href="../scheduler/scheduler.html">' + (i + 1) + '>' + (j + 1) + '-' + (k + 1) + '</a>'
+                }
+                text += '</div>'
+            }
+            text += '</div>'
+        }
+
+        document.getElementById('nqn').innerHTML = text;
+    </script>
+</body>
+
+</html>
