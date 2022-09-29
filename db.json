@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": "16f7a449-239e-420a-9e28-b05efe9cba8f",
+      "name": "Sauce - Salsa",
+      "description": "ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
+      "imageURL": "http://dummyimage.com/300x200.jpg/5fa2dd/ffffff"
+    }
+  ]
+}
